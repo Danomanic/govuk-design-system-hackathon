@@ -23,7 +23,9 @@ const PORT = 3000
 // here exactly the way it does in a real government service.
 nunjucks.configure(
   [path.join(__dirname, 'views'), path.join(__dirname, '..', 'vendor')],
-  { autoescape: true, express: app, watch: false }
+  // noCache means you can edit a .njk file and just refresh the browser -
+  // no restart needed. Slower, but this is a hackathon, not production.
+  { autoescape: true, express: app, noCache: true }
 )
 
 // --- Static files ----------------------------------------------------------
