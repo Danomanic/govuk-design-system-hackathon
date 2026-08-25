@@ -1,0 +1,1710 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template">
+  <head>
+    <meta charset="utf-8">
+    <title>Component gallery - Register a rubber duck - GOV.UK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#1d70b8">
+
+<link rel="stylesheet" href="../vendor/govuk/govuk-frontend.min.css">
+<style>
+  .hack-example { border: 1px solid #b1b4b6; border-left: 5px solid #1d70b8; padding: 20px 20px 5px; margin-bottom: 10px; background: #fff; }
+  .hack-code { background: #f3f2f1; border: 1px solid #b1b4b6; padding: 12px; overflow-x: auto; font-size: 15px; line-height: 1.4; white-space: pre; }
+  .hack-code code { font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; }
+  .hack-js { display: inline-block; margin-bottom: 10px; }
+  .hack-contents { column-count: 2; column-gap: 30px; }
+  @media (max-width: 40.0625em) { .hack-contents { column-count: 1; } }
+  .hack-section { border-top: 2px solid #1d70b8; padding-top: 15px; margin-top: 50px; }
+</style>
+
+<link rel="icon" sizes="48x48" href="../vendor/govuk/assets/images/favicon.ico">
+<link rel="icon" sizes="any" href="../vendor/govuk/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="mask-icon" href="../vendor/govuk/assets/images/govuk-icon-mask.svg" color="#1d70b8">
+<link rel="apple-touch-icon" href="../vendor/govuk/assets/images/govuk-icon-180.png">
+
+  </head>
+  <body class="govuk-template__body">
+    <script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
+
+        <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
+
+        <header class="govuk-template__header">
+
+<div class="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+    <div class="govuk-header__logo">
+      <a href="//gov.uk" class="govuk-header__homepage-link">
+
+          <svg focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 324 60" height="30" width="162" fill="currentcolor" class="govuk-header__logotype" aria-label="GOV.UK"><title>GOV.UK</title>
+            <g>
+                <circle cx="20" cy="17.6" r="3.7"/>
+                <circle cx="10.2" cy="23.5" r="3.7"/>
+                <circle cx="3.7" cy="33.2" r="3.7"/>
+                <circle cx="31.7" cy="30.6" r="3.7"/>
+                <circle cx="43.3" cy="17.6" r="3.7"/>
+                <circle cx="53.2" cy="23.5" r="3.7"/>
+                <circle cx="59.7" cy="33.2" r="3.7"/>
+                <circle cx="31.7" cy="30.6" r="3.7"/>
+                <path d="M33.1,9.8c.2-.1.3-.3.5-.5l4.6,2.4v-6.8l-4.6,1.5c-.1-.2-.3-.3-.5-.5l1.9-5.9h-6.7l1.9,5.9c-.2.1-.3.3-.5.5l-4.6-1.5v6.8l4.6-2.4c.1.2.3.3.5.5l-2.6,8c-.9,2.8,1.2,5.7,4.1,5.7h0c3,0,5.1-2.9,4.1-5.7l-2.6-8ZM37,37.9s-3.4,3.8-4.1,6.1c2.2,0,4.2-.5,6.4-2.8l-.7,8.5c-2-2.8-4.4-4.1-5.7-3.8.1,3.1.5,6.7,5.8,7.2,3.7.3,6.7-1.5,7-3.8.4-2.6-2-4.3-3.7-1.6-1.4-4.5,2.4-6.1,4.9-3.2-1.9-4.5-1.8-7.7,2.4-10.9,3,4,2.6,7.3-1.2,11.1,2.4-1.3,6.2,0,4,4.6-1.2-2.8-3.7-2.2-4.2.2-.3,1.7.7,3.7,3,4.2,1.9.3,4.7-.9,7-5.9-1.3,0-2.4.7-3.9,1.7l2.4-8c.6,2.3,1.4,3.7,2.2,4.5.6-1.6.5-2.8,0-5.3l5,1.8c-2.6,3.6-5.2,8.7-7.3,17.5-7.4-1.1-15.7-1.7-24.5-1.7h0c-8.8,0-17.1.6-24.5,1.7-2.1-8.9-4.7-13.9-7.3-17.5l5-1.8c-.5,2.5-.6,3.7,0,5.3.8-.8,1.6-2.3,2.2-4.5l2.4,8c-1.5-1-2.6-1.7-3.9-1.7,2.3,5,5.2,6.2,7,5.9,2.3-.4,3.3-2.4,3-4.2-.5-2.4-3-3.1-4.2-.2-2.2-4.6,1.6-6,4-4.6-3.7-3.7-4.2-7.1-1.2-11.1,4.2,3.2,4.3,6.4,2.4,10.9,2.5-2.8,6.3-1.3,4.9,3.2-1.8-2.7-4.1-1-3.7,1.6.3,2.3,3.3,4.1,7,3.8,5.4-.5,5.7-4.2,5.8-7.2-1.3-.2-3.7,1-5.7,3.8l-.7-8.5c2.2,2.3,4.2,2.7,6.4,2.8-.7-2.3-4.1-6.1-4.1-6.1h10.6,0Z"/>
+              </g>
+
+              <circle class="govuk-logo-dot" cx="226" cy="36" r="7.3"/>
+              <path d="M93.94 41.25c.4 1.81 1.2 3.21 2.21 4.62 1 1.4 2.21 2.41 3.61 3.21s3.21 1.2 5.22 1.2 3.61-.4 4.82-1c1.4-.6 2.41-1.4 3.21-2.41.8-1 1.4-2.01 1.61-3.01s.4-2.01.4-3.01v.14h-10.86v-7.02h20.07v24.08h-8.03v-5.56c-.6.8-1.38 1.61-2.19 2.41-.8.8-1.81 1.2-2.81 1.81-1 .4-2.21.8-3.41 1.2s-2.41.4-3.81.4a18.56 18.56 0 0 1-14.65-6.63c-1.6-2.01-3.01-4.41-3.81-7.02s-1.4-5.62-1.4-8.83.4-6.02 1.4-8.83a20.45 20.45 0 0 1 19.46-13.65c3.21 0 4.01.2 5.82.8 1.81.4 3.61 1.2 5.02 2.01 1.61.8 2.81 2.01 4.01 3.21s2.21 2.61 2.81 4.21l-7.63 4.41c-.4-1-1-1.81-1.61-2.61-.6-.8-1.4-1.4-2.21-2.01-.8-.6-1.81-1-2.81-1.4-1-.4-2.21-.4-3.61-.4-2.01 0-3.81.4-5.22 1.2-1.4.8-2.61 1.81-3.61 3.21s-1.61 2.81-2.21 4.62c-.4 1.81-.6 3.71-.6 5.42s.8 5.22.8 5.22Zm57.8-27.9c3.21 0 6.22.6 8.63 1.81 2.41 1.2 4.82 2.81 6.62 4.82S170.2 24.39 171 27s1.4 5.62 1.4 8.83-.4 6.02-1.4 8.83-2.41 5.02-4.01 7.02-4.01 3.61-6.62 4.82-5.42 1.81-8.63 1.81-6.22-.6-8.63-1.81-4.82-2.81-6.42-4.82-3.21-4.41-4.01-7.02-1.4-5.62-1.4-8.83.4-6.02 1.4-8.83 2.41-5.02 4.01-7.02 4.01-3.61 6.42-4.82 5.42-1.81 8.63-1.81Zm0 36.73c1.81 0 3.61-.4 5.02-1s2.61-1.81 3.61-3.01 1.81-2.81 2.21-4.41c.4-1.81.8-3.61.8-5.62 0-2.21-.2-4.21-.8-6.02s-1.2-3.21-2.21-4.62c-1-1.2-2.21-2.21-3.61-3.01s-3.21-1-5.02-1-3.61.4-5.02 1c-1.4.8-2.61 1.81-3.61 3.01s-1.81 2.81-2.21 4.62c-.4 1.81-.8 3.61-.8 5.62 0 2.41.2 4.21.8 6.02.4 1.81 1.2 3.21 2.21 4.41s2.21 2.21 3.61 3.01c1.4.8 3.21 1 5.02 1Zm36.32 7.96-12.24-44.15h9.83l8.43 32.77h.4l8.23-32.77h9.83L200.3 58.04h-12.24Zm74.14-7.96c2.18 0 3.51-.6 3.51-.6 1.2-.6 2.01-1 2.81-1.81s1.4-1.81 1.81-2.81a13 13 0 0 0 .8-4.01V13.9h8.63v28.15c0 2.41-.4 4.62-1.4 6.62-.8 2.01-2.21 3.61-3.61 5.02s-3.41 2.41-5.62 3.21-4.62 1.2-7.02 1.2-5.02-.4-7.02-1.2c-2.21-.8-4.01-1.81-5.62-3.21s-2.81-3.01-3.61-5.02-1.4-4.21-1.4-6.62V13.9h8.63v26.95c0 1.61.2 3.01.8 4.01.4 1.2 1.2 2.21 2.01 2.81.8.8 1.81 1.4 2.81 1.81 0 0 1.34.6 3.51.6Zm34.22-36.18v18.92l15.65-18.92h10.82l-15.03 17.32 16.03 26.83h-10.21l-11.44-20.21-5.62 6.22v13.99h-8.83V13.9"/>
+
+          </svg>
+
+      </a>
+    </div>
+  </div>
+</div>
+
+  <section aria-label="Service information" class="govuk-service-navigation" data-module="govuk-service-navigation">
+
+  <div class="govuk-width-container">
+
+    <div class="govuk-service-navigation__container">
+
+        <span class="govuk-service-navigation__service-name">
+
+            <a href="index.html" class="govuk-service-navigation__link">
+              Register a rubber duck
+            </a>
+
+        </span>
+
+    </div>
+
+    </div>
+
+  </section>
+
+        </header>
+
+      <div class="govuk-width-container">
+
+<div class="govuk-phase-banner govuk-width-container">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      alpha
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a hackathon prototype. It doesn’t really do anything.
+    </span>
+  </p>
+</div>
+
+        <main class="govuk-main-wrapper" id="main-content">
+
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-two-thirds">
+<h1 class="govuk-heading-xl" id="top">Component gallery</h1>
+<p class="govuk-body-l">Every component you are likely to need, with the code to copy. This page works offline.</p>
+<p class="govuk-body">Each component shows a live example, then the <strong>HTML</strong> to paste into a Track&nbsp;A page, then the <strong>Nunjucks</strong> to paste into a Track&nbsp;B template.</p>
+<p class="govuk-body"><a class="govuk-link" href="index.html">Back to the example service</a></p>
+</div>
+</div>
+
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-full">
+<h2 class="govuk-heading-m">Contents</h2>
+<div class="hack-contents">
+<h3 class="govuk-heading-s govuk-!-margin-bottom-1">Asking questions</h3>
+<ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-4">
+<li><a class="govuk-link" href="#text-input">Text input</a></li>
+<li><a class="govuk-link" href="#textarea">Textarea</a></li>
+<li><a class="govuk-link" href="#character-count">Character count</a></li>
+<li><a class="govuk-link" href="#radios">Radios</a></li>
+<li><a class="govuk-link" href="#radios-conditional">Radios with a conditional reveal</a></li>
+<li><a class="govuk-link" href="#checkboxes">Checkboxes</a></li>
+<li><a class="govuk-link" href="#select">Select</a></li>
+<li><a class="govuk-link" href="#date-input">Date input</a></li>
+</ul>
+<h3 class="govuk-heading-s govuk-!-margin-bottom-1">Moving around</h3>
+<ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-4">
+<li><a class="govuk-link" href="#button">Button</a></li>
+<li><a class="govuk-link" href="#back-link">Back link</a></li>
+</ul>
+<h3 class="govuk-heading-s govuk-!-margin-bottom-1">Errors</h3>
+<ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-4">
+<li><a class="govuk-link" href="#error-summary">Error summary</a></li>
+<li><a class="govuk-link" href="#error-message">A field in its error state</a></li>
+</ul>
+<h3 class="govuk-heading-s govuk-!-margin-bottom-1">Confirming</h3>
+<ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-4">
+<li><a class="govuk-link" href="#summary-list">Summary list</a></li>
+<li><a class="govuk-link" href="#panel">Confirmation panel</a></li>
+<li><a class="govuk-link" href="#task-list">Task list</a></li>
+</ul>
+<h3 class="govuk-heading-s govuk-!-margin-bottom-1">Telling people things</h3>
+<ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-4">
+<li><a class="govuk-link" href="#inset-text">Inset text</a></li>
+<li><a class="govuk-link" href="#warning-text">Warning text</a></li>
+<li><a class="govuk-link" href="#notification-banner">Notification banner</a></li>
+<li><a class="govuk-link" href="#details">Details</a></li>
+<li><a class="govuk-link" href="#tag">Tag</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-full">
+<h2 class="govuk-heading-l hack-section">Asking questions</h2>
+</div>
+</div>
+
+<div class="govuk-grid-row" id="text-input">
+<div class="govuk-grid-column-two-thirds">
+<h3 class="govuk-heading-m">Text input</h3>
+<p class="govuk-body">A single line of text: a name, a reference number, a town.</p>
+
+<div class="hack-example">
+<div class="govuk-form-group">
+  <h1 class="govuk-label-wrapper">
+    <label class="govuk-label govuk-label--l" for="road-name">
+      What is the name of the road?
+    </label>
+  </h1>
+
+  <div id="road-name-hint" class="govuk-hint">
+    For example, Acacia Avenue
+  </div>
+
+  <input class="govuk-input" id="road-name" name="roadName" type="text" aria-describedby="road-name-hint">
+
+</div>
+</div>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">HTML &mdash; copy this into a Track A page</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>&lt;div class="govuk-form-group"&gt;
+  &lt;h1 class="govuk-label-wrapper"&gt;
+    &lt;label class="govuk-label govuk-label--l" for="road-name"&gt;
+      What is the name of the road?
+    &lt;/label&gt;
+  &lt;/h1&gt;
+
+  &lt;div id="road-name-hint" class="govuk-hint"&gt;
+    For example, Acacia Avenue
+  &lt;/div&gt;
+
+  &lt;input class="govuk-input" id="road-name" name="roadName" type="text" aria-describedby="road-name-hint"&gt;
+
+&lt;/div&gt;</code></pre></div>
+</details>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">Nunjucks &mdash; copy this into a Track B template</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>{% from "govuk/components/input/macro.njk" import govukInput %}
+{{ govukInput({
+  label: { text: "What is the name of the road?", classes: "govuk-label--l", isPageHeading: true },
+  hint: { text: "For example, Acacia Avenue" },
+  id: "road-name",
+  name: "roadName"
+}) }}</code></pre></div>
+</details>
+
+<p class="govuk-body-s"><a class="govuk-link" href="#top">Back to contents</a></p>
+</div>
+</div>
+
+<div class="govuk-grid-row" id="textarea">
+<div class="govuk-grid-column-two-thirds">
+<h3 class="govuk-heading-m">Textarea</h3>
+<p class="govuk-body">More than one line: a description, an explanation, an address.</p>
+
+<div class="hack-example">
+<div class="govuk-form-group">
+  <h1 class="govuk-label-wrapper">
+    <label class="govuk-label govuk-label--l" for="description">
+      Describe the problem
+    </label>
+  </h1>
+
+  <div id="description-hint" class="govuk-hint">
+    Include anything that would help us find it
+  </div>
+
+  <textarea class="govuk-textarea" id="description" name="description" rows="5" aria-describedby="description-hint"></textarea>
+
+</div>
+</div>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">HTML &mdash; copy this into a Track A page</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>&lt;div class="govuk-form-group"&gt;
+  &lt;h1 class="govuk-label-wrapper"&gt;
+    &lt;label class="govuk-label govuk-label--l" for="description"&gt;
+      Describe the problem
+    &lt;/label&gt;
+  &lt;/h1&gt;
+
+  &lt;div id="description-hint" class="govuk-hint"&gt;
+    Include anything that would help us find it
+  &lt;/div&gt;
+
+  &lt;textarea class="govuk-textarea" id="description" name="description" rows="5" aria-describedby="description-hint"&gt;&lt;/textarea&gt;
+
+&lt;/div&gt;</code></pre></div>
+</details>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">Nunjucks &mdash; copy this into a Track B template</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>{% from "govuk/components/textarea/macro.njk" import govukTextarea %}
+{{ govukTextarea({
+  label: { text: "Describe the problem", classes: "govuk-label--l", isPageHeading: true },
+  hint: { text: "Include anything that would help us find it" },
+  id: "description",
+  name: "description",
+  rows: 5
+}) }}</code></pre></div>
+</details>
+
+<p class="govuk-body-s"><a class="govuk-link" href="#top">Back to contents</a></p>
+</div>
+</div>
+
+<div class="govuk-grid-row" id="character-count">
+<div class="govuk-grid-column-two-thirds">
+<h3 class="govuk-heading-m">Character count</h3>
+<p class="govuk-body">A textarea with a limit. The counter only appears when JavaScript runs.</p>
+<strong class="govuk-tag govuk-tag--yellow hack-js">Needs JavaScript</strong>
+<div class="hack-example">
+<div class="govuk-form-group govuk-character-count" data-module="govuk-character-count" data-maxlength="200">
+  <h1 class="govuk-label-wrapper">
+    <label class="govuk-label govuk-label--l" for="reason">
+      Why do you need a licence?
+    </label>
+  </h1>
+
+  <textarea class="govuk-textarea govuk-js-character-count" id="reason" name="reason" rows="4" aria-describedby="reason-info"></textarea>
+
+  <div id="reason-info" class="govuk-hint govuk-character-count__message">
+    You can enter up to 200 characters
+  </div>
+
+</div>
+</div>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">HTML &mdash; copy this into a Track A page</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>&lt;div class="govuk-form-group govuk-character-count" data-module="govuk-character-count" data-maxlength="200"&gt;
+  &lt;h1 class="govuk-label-wrapper"&gt;
+    &lt;label class="govuk-label govuk-label--l" for="reason"&gt;
+      Why do you need a licence?
+    &lt;/label&gt;
+  &lt;/h1&gt;
+
+  &lt;textarea class="govuk-textarea govuk-js-character-count" id="reason" name="reason" rows="4" aria-describedby="reason-info"&gt;&lt;/textarea&gt;
+
+  &lt;div id="reason-info" class="govuk-hint govuk-character-count__message"&gt;
+    You can enter up to 200 characters
+  &lt;/div&gt;
+
+&lt;/div&gt;</code></pre></div>
+</details>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">Nunjucks &mdash; copy this into a Track B template</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>{% from "govuk/components/character-count/macro.njk" import govukCharacterCount %}
+{{ govukCharacterCount({
+  label: { text: "Why do you need a licence?", classes: "govuk-label--l", isPageHeading: true },
+  id: "reason",
+  name: "reason",
+  maxlength: 200,
+  rows: 4
+}) }}</code></pre></div>
+</details>
+
+<p class="govuk-body-s"><a class="govuk-link" href="#top">Back to contents</a></p>
+</div>
+</div>
+
+<div class="govuk-grid-row" id="radios">
+<div class="govuk-grid-column-two-thirds">
+<h3 class="govuk-heading-m">Radios</h3>
+<p class="govuk-body">Pick ONE option from a short list. If there are more than about 6 options, use a select instead.</p>
+
+<div class="hack-example">
+<div class="govuk-form-group">
+
+  <fieldset class="govuk-fieldset" aria-describedby="size-hint">
+
+  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+
+    <h1 class="govuk-fieldset__heading">
+      How big is the pothole?
+    </h1>
+
+  </legend>
+
+  <div id="size-hint" class="govuk-hint">
+    Your best guess is fine
+  </div>
+
+  <div class="govuk-radios" data-module="govuk-radios">
+
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="size" name="size" type="radio" value="small">
+      <label class="govuk-label govuk-radios__label" for="size">
+        Smaller than a dinner plate
+      </label>
+
+    </div>
+
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="size-2" name="size" type="radio" value="medium">
+      <label class="govuk-label govuk-radios__label" for="size-2">
+        Bigger than a dinner plate
+      </label>
+
+    </div>
+
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="size-3" name="size" type="radio" value="huge">
+      <label class="govuk-label govuk-radios__label" for="size-3">
+        You can no longer see the bottom
+      </label>
+
+    </div>
+
+  </div>
+
+</fieldset>
+
+</div>
+</div>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">HTML &mdash; copy this into a Track A page</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>&lt;div class="govuk-form-group"&gt;
+
+  &lt;fieldset class="govuk-fieldset" aria-describedby="size-hint"&gt;
+
+  &lt;legend class="govuk-fieldset__legend govuk-fieldset__legend--l"&gt;
+
+    &lt;h1 class="govuk-fieldset__heading"&gt;
+      How big is the pothole?
+    &lt;/h1&gt;
+
+  &lt;/legend&gt;
+
+  &lt;div id="size-hint" class="govuk-hint"&gt;
+    Your best guess is fine
+  &lt;/div&gt;
+
+  &lt;div class="govuk-radios" data-module="govuk-radios"&gt;
+
+    &lt;div class="govuk-radios__item"&gt;
+      &lt;input class="govuk-radios__input" id="size" name="size" type="radio" value="small"&gt;
+      &lt;label class="govuk-label govuk-radios__label" for="size"&gt;
+        Smaller than a dinner plate
+      &lt;/label&gt;
+
+    &lt;/div&gt;
+
+    &lt;div class="govuk-radios__item"&gt;
+      &lt;input class="govuk-radios__input" id="size-2" name="size" type="radio" value="medium"&gt;
+      &lt;label class="govuk-label govuk-radios__label" for="size-2"&gt;
+        Bigger than a dinner plate
+      &lt;/label&gt;
+
+    &lt;/div&gt;
+
+    &lt;div class="govuk-radios__item"&gt;
+      &lt;input class="govuk-radios__input" id="size-3" name="size" type="radio" value="huge"&gt;
+      &lt;label class="govuk-label govuk-radios__label" for="size-3"&gt;
+        You can no longer see the bottom
+      &lt;/label&gt;
+
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+
+&lt;/fieldset&gt;
+
+&lt;/div&gt;</code></pre></div>
+</details>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">Nunjucks &mdash; copy this into a Track B template</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>{% from "govuk/components/radios/macro.njk" import govukRadios %}
+{{ govukRadios({
+  name: "size",
+  fieldset: {
+    legend: { text: "How big is the pothole?", classes: "govuk-fieldset__legend--l", isPageHeading: true }
+  },
+  hint: { text: "Your best guess is fine" },
+  items: [
+    { value: "small", text: "Smaller than a dinner plate" },
+    { value: "medium", text: "Bigger than a dinner plate" },
+    { value: "huge", text: "You can no longer see the bottom" }
+  ]
+}) }}</code></pre></div>
+</details>
+
+<p class="govuk-body-s"><a class="govuk-link" href="#top">Back to contents</a></p>
+</div>
+</div>
+
+<div class="govuk-grid-row" id="radios-conditional">
+<div class="govuk-grid-column-two-thirds">
+<h3 class="govuk-heading-m">Radios with a conditional reveal</h3>
+<p class="govuk-body">Ask a follow-up question only when it is relevant. Needs JavaScript to hide and show.</p>
+<strong class="govuk-tag govuk-tag--yellow hack-js">Needs JavaScript</strong>
+<div class="hack-example">
+<div class="govuk-form-group">
+
+  <fieldset class="govuk-fieldset">
+
+  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+
+    <h1 class="govuk-fieldset__heading">
+      Was anyone injured?
+    </h1>
+
+  </legend>
+
+  <div class="govuk-radios" data-module="govuk-radios">
+
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="injured" name="injured" type="radio" value="yes" data-aria-controls="conditional-injured">
+      <label class="govuk-label govuk-radios__label" for="injured">
+        Yes
+      </label>
+
+    </div>
+
+    <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-injured">
+      <div class="govuk-form-group"><label class="govuk-label" for="injury-details">How many people?</label><input class="govuk-input govuk-input--width-3" id="injury-details" name="injuryDetails" type="text"></div>
+    </div>
+
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="injured-2" name="injured" type="radio" value="no">
+      <label class="govuk-label govuk-radios__label" for="injured-2">
+        No
+      </label>
+
+    </div>
+
+  </div>
+
+</fieldset>
+
+</div>
+</div>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">HTML &mdash; copy this into a Track A page</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>&lt;div class="govuk-form-group"&gt;
+
+  &lt;fieldset class="govuk-fieldset"&gt;
+
+  &lt;legend class="govuk-fieldset__legend govuk-fieldset__legend--l"&gt;
+
+    &lt;h1 class="govuk-fieldset__heading"&gt;
+      Was anyone injured?
+    &lt;/h1&gt;
+
+  &lt;/legend&gt;
+
+  &lt;div class="govuk-radios" data-module="govuk-radios"&gt;
+
+    &lt;div class="govuk-radios__item"&gt;
+      &lt;input class="govuk-radios__input" id="injured" name="injured" type="radio" value="yes" data-aria-controls="conditional-injured"&gt;
+      &lt;label class="govuk-label govuk-radios__label" for="injured"&gt;
+        Yes
+      &lt;/label&gt;
+
+    &lt;/div&gt;
+
+    &lt;div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-injured"&gt;
+      &lt;div class="govuk-form-group"&gt;&lt;label class="govuk-label" for="injury-details"&gt;How many people?&lt;/label&gt;&lt;input class="govuk-input govuk-input--width-3" id="injury-details" name="injuryDetails" type="text"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="govuk-radios__item"&gt;
+      &lt;input class="govuk-radios__input" id="injured-2" name="injured" type="radio" value="no"&gt;
+      &lt;label class="govuk-label govuk-radios__label" for="injured-2"&gt;
+        No
+      &lt;/label&gt;
+
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+
+&lt;/fieldset&gt;
+
+&lt;/div&gt;</code></pre></div>
+</details>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">Nunjucks &mdash; copy this into a Track B template</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>{% from "govuk/components/radios/macro.njk" import govukRadios %}
+{{ govukRadios({
+  name: "injured",
+  fieldset: {
+    legend: { text: "Was anyone injured?", classes: "govuk-fieldset__legend--l", isPageHeading: true }
+  },
+  items: [
+    {
+      value: "yes",
+      text: "Yes",
+      conditional: {
+        html: '&lt;div class="govuk-form-group"&gt;&lt;label class="govuk-label" for="injury-details"&gt;How many people?&lt;/label&gt;&lt;input class="govuk-input govuk-input--width-3" id="injury-details" name="injuryDetails" type="text"&gt;&lt;/div&gt;'
+      }
+    },
+    { value: "no", text: "No" }
+  ]
+}) }}</code></pre></div>
+</details>
+
+<p class="govuk-body-s"><a class="govuk-link" href="#top">Back to contents</a></p>
+</div>
+</div>
+
+<div class="govuk-grid-row" id="checkboxes">
+<div class="govuk-grid-column-two-thirds">
+<h3 class="govuk-heading-m">Checkboxes</h3>
+<p class="govuk-body">Pick ANY NUMBER of options, including none.</p>
+
+<div class="hack-example">
+<div class="govuk-form-group">
+
+  <fieldset class="govuk-fieldset" aria-describedby="hazards-hint">
+
+  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+
+    <h1 class="govuk-fieldset__heading">
+      What is nearby?
+    </h1>
+
+  </legend>
+
+  <div id="hazards-hint" class="govuk-hint">
+    Select all that apply
+  </div>
+
+  <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+
+    <div class="govuk-checkboxes__item">
+      <input class="govuk-checkboxes__input" id="hazards" name="hazards" type="checkbox" value="school">
+      <label class="govuk-label govuk-checkboxes__label" for="hazards">
+        A school
+      </label>
+
+    </div>
+
+    <div class="govuk-checkboxes__item">
+      <input class="govuk-checkboxes__input" id="hazards-2" name="hazards" type="checkbox" value="hospital">
+      <label class="govuk-label govuk-checkboxes__label" for="hazards-2">
+        A hospital
+      </label>
+
+    </div>
+
+    <div class="govuk-checkboxes__item">
+      <input class="govuk-checkboxes__input" id="hazards-3" name="hazards" type="checkbox" value="duckpond">
+      <label class="govuk-label govuk-checkboxes__label" for="hazards-3">
+        A duck pond
+      </label>
+
+    </div>
+
+  </div>
+
+</fieldset>
+
+</div>
+</div>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">HTML &mdash; copy this into a Track A page</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>&lt;div class="govuk-form-group"&gt;
+
+  &lt;fieldset class="govuk-fieldset" aria-describedby="hazards-hint"&gt;
+
+  &lt;legend class="govuk-fieldset__legend govuk-fieldset__legend--l"&gt;
+
+    &lt;h1 class="govuk-fieldset__heading"&gt;
+      What is nearby?
+    &lt;/h1&gt;
+
+  &lt;/legend&gt;
+
+  &lt;div id="hazards-hint" class="govuk-hint"&gt;
+    Select all that apply
+  &lt;/div&gt;
+
+  &lt;div class="govuk-checkboxes" data-module="govuk-checkboxes"&gt;
+
+    &lt;div class="govuk-checkboxes__item"&gt;
+      &lt;input class="govuk-checkboxes__input" id="hazards" name="hazards" type="checkbox" value="school"&gt;
+      &lt;label class="govuk-label govuk-checkboxes__label" for="hazards"&gt;
+        A school
+      &lt;/label&gt;
+
+    &lt;/div&gt;
+
+    &lt;div class="govuk-checkboxes__item"&gt;
+      &lt;input class="govuk-checkboxes__input" id="hazards-2" name="hazards" type="checkbox" value="hospital"&gt;
+      &lt;label class="govuk-label govuk-checkboxes__label" for="hazards-2"&gt;
+        A hospital
+      &lt;/label&gt;
+
+    &lt;/div&gt;
+
+    &lt;div class="govuk-checkboxes__item"&gt;
+      &lt;input class="govuk-checkboxes__input" id="hazards-3" name="hazards" type="checkbox" value="duckpond"&gt;
+      &lt;label class="govuk-label govuk-checkboxes__label" for="hazards-3"&gt;
+        A duck pond
+      &lt;/label&gt;
+
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+
+&lt;/fieldset&gt;
+
+&lt;/div&gt;</code></pre></div>
+</details>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">Nunjucks &mdash; copy this into a Track B template</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>{% from "govuk/components/checkboxes/macro.njk" import govukCheckboxes %}
+{{ govukCheckboxes({
+  name: "hazards",
+  fieldset: {
+    legend: { text: "What is nearby?", classes: "govuk-fieldset__legend--l", isPageHeading: true }
+  },
+  hint: { text: "Select all that apply" },
+  items: [
+    { value: "school", text: "A school" },
+    { value: "hospital", text: "A hospital" },
+    { value: "duckpond", text: "A duck pond" }
+  ]
+}) }}</code></pre></div>
+</details>
+
+<p class="govuk-body-s"><a class="govuk-link" href="#top">Back to contents</a></p>
+</div>
+</div>
+
+<div class="govuk-grid-row" id="select">
+<div class="govuk-grid-column-two-thirds">
+<h3 class="govuk-heading-m">Select</h3>
+<p class="govuk-body">A long list where the user already knows their answer, like a country. Radios are easier for short lists.</p>
+
+<div class="hack-example">
+<div class="govuk-form-group">
+  <h1 class="govuk-label-wrapper">
+    <label class="govuk-label govuk-label--l" for="council">
+      Which council area?
+    </label>
+  </h1>
+
+  <select class="govuk-select" id="council" name="council">
+
+    <option value="">Choose a council</option>
+
+    <option value="ashby">Ashby-de-la-Zouch</option>
+
+    <option value="barnsley">Barnsley</option>
+
+    <option value="chipping">Chipping Sodbury</option>
+
+  </select>
+
+</div>
+</div>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">HTML &mdash; copy this into a Track A page</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>&lt;div class="govuk-form-group"&gt;
+  &lt;h1 class="govuk-label-wrapper"&gt;
+    &lt;label class="govuk-label govuk-label--l" for="council"&gt;
+      Which council area?
+    &lt;/label&gt;
+  &lt;/h1&gt;
+
+  &lt;select class="govuk-select" id="council" name="council"&gt;
+
+    &lt;option value=""&gt;Choose a council&lt;/option&gt;
+
+    &lt;option value="ashby"&gt;Ashby-de-la-Zouch&lt;/option&gt;
+
+    &lt;option value="barnsley"&gt;Barnsley&lt;/option&gt;
+
+    &lt;option value="chipping"&gt;Chipping Sodbury&lt;/option&gt;
+
+  &lt;/select&gt;
+
+&lt;/div&gt;</code></pre></div>
+</details>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">Nunjucks &mdash; copy this into a Track B template</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>{% from "govuk/components/select/macro.njk" import govukSelect %}
+{{ govukSelect({
+  id: "council",
+  name: "council",
+  label: { text: "Which council area?", classes: "govuk-label--l", isPageHeading: true },
+  items: [
+    { value: "", text: "Choose a council" },
+    { value: "ashby", text: "Ashby-de-la-Zouch" },
+    { value: "barnsley", text: "Barnsley" },
+    { value: "chipping", text: "Chipping Sodbury" }
+  ]
+}) }}</code></pre></div>
+</details>
+
+<p class="govuk-body-s"><a class="govuk-link" href="#top">Back to contents</a></p>
+</div>
+</div>
+
+<div class="govuk-grid-row" id="date-input">
+<div class="govuk-grid-column-two-thirds">
+<h3 class="govuk-heading-m">Date input</h3>
+<p class="govuk-body">A date the user knows, like a date of birth. Three boxes, never a date picker.</p>
+
+<div class="hack-example">
+<div class="govuk-form-group">
+
+  <fieldset class="govuk-fieldset" role="group" aria-describedby="spotted-hint">
+
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+
+      <h1 class="govuk-fieldset__heading">
+        When did you spot it?
+      </h1>
+
+    </legend>
+
+    <div id="spotted-hint" class="govuk-hint">
+      For example, 27 3 2026
+    </div>
+
+    <div class="govuk-date-input" id="spotted">
+
+            <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="spotted-day">
+            Day
+          </label>
+
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="spotted-day" name="spotted-day" type="text" inputmode="numeric">
+
+        </div>
+      </div>
+
+            <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="spotted-month">
+            Month
+          </label>
+
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="spotted-month" name="spotted-month" type="text" inputmode="numeric">
+
+        </div>
+      </div>
+
+            <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="spotted-year">
+            Year
+          </label>
+
+          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="spotted-year" name="spotted-year" type="text" inputmode="numeric">
+
+        </div>
+      </div>
+
+    </div>
+
+  </fieldset>
+
+</div>
+</div>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">HTML &mdash; copy this into a Track A page</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>&lt;div class="govuk-form-group"&gt;
+
+  &lt;fieldset class="govuk-fieldset" role="group" aria-describedby="spotted-hint"&gt;
+
+    &lt;legend class="govuk-fieldset__legend govuk-fieldset__legend--l"&gt;
+
+      &lt;h1 class="govuk-fieldset__heading"&gt;
+        When did you spot it?
+      &lt;/h1&gt;
+
+    &lt;/legend&gt;
+
+    &lt;div id="spotted-hint" class="govuk-hint"&gt;
+      For example, 27 3 2026
+    &lt;/div&gt;
+
+    &lt;div class="govuk-date-input" id="spotted"&gt;
+
+            &lt;div class="govuk-date-input__item"&gt;
+        &lt;div class="govuk-form-group"&gt;
+          &lt;label class="govuk-label govuk-date-input__label" for="spotted-day"&gt;
+            Day
+          &lt;/label&gt;
+
+          &lt;input class="govuk-input govuk-date-input__input govuk-input--width-2" id="spotted-day" name="spotted-day" type="text" inputmode="numeric"&gt;
+
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+            &lt;div class="govuk-date-input__item"&gt;
+        &lt;div class="govuk-form-group"&gt;
+          &lt;label class="govuk-label govuk-date-input__label" for="spotted-month"&gt;
+            Month
+          &lt;/label&gt;
+
+          &lt;input class="govuk-input govuk-date-input__input govuk-input--width-2" id="spotted-month" name="spotted-month" type="text" inputmode="numeric"&gt;
+
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+            &lt;div class="govuk-date-input__item"&gt;
+        &lt;div class="govuk-form-group"&gt;
+          &lt;label class="govuk-label govuk-date-input__label" for="spotted-year"&gt;
+            Year
+          &lt;/label&gt;
+
+          &lt;input class="govuk-input govuk-date-input__input govuk-input--width-4" id="spotted-year" name="spotted-year" type="text" inputmode="numeric"&gt;
+
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+    &lt;/div&gt;
+
+  &lt;/fieldset&gt;
+
+&lt;/div&gt;</code></pre></div>
+</details>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">Nunjucks &mdash; copy this into a Track B template</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>{% from "govuk/components/date-input/macro.njk" import govukDateInput %}
+{{ govukDateInput({
+  id: "spotted",
+  namePrefix: "spotted",
+  fieldset: {
+    legend: { text: "When did you spot it?", classes: "govuk-fieldset__legend--l", isPageHeading: true }
+  },
+  hint: { text: "For example, 27 3 2026" }
+}) }}</code></pre></div>
+</details>
+
+<p class="govuk-body-s"><a class="govuk-link" href="#top">Back to contents</a></p>
+</div>
+</div>
+
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-full">
+<h2 class="govuk-heading-l hack-section">Moving around</h2>
+</div>
+</div>
+
+<div class="govuk-grid-row" id="button">
+<div class="govuk-grid-column-two-thirds">
+<h3 class="govuk-heading-m">Button</h3>
+<p class="govuk-body">One green button per page, and it should say what it does: "Continue", "Accept and send".</p>
+
+<div class="hack-example">
+<button type="submit" class="govuk-button" data-module="govuk-button">
+  Continue
+</button>
+
+<a href="#" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
+  Start now
+  <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+    <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"/>
+  </svg>
+</a>
+
+<button type="submit" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+  Cancel
+</button>
+
+<button type="submit" class="govuk-button govuk-button--warning" data-module="govuk-button">
+  Delete
+</button>
+</div>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">HTML &mdash; copy this into a Track A page</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>&lt;button type="submit" class="govuk-button" data-module="govuk-button"&gt;
+  Continue
+&lt;/button&gt;
+
+&lt;a href="#" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button"&gt;
+  Start now
+  &lt;svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false"&gt;
+    &lt;path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"/&gt;
+  &lt;/svg&gt;
+&lt;/a&gt;
+
+&lt;button type="submit" class="govuk-button govuk-button--secondary" data-module="govuk-button"&gt;
+  Cancel
+&lt;/button&gt;
+
+&lt;button type="submit" class="govuk-button govuk-button--warning" data-module="govuk-button"&gt;
+  Delete
+&lt;/button&gt;</code></pre></div>
+</details>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">Nunjucks &mdash; copy this into a Track B template</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>{% from "govuk/components/button/macro.njk" import govukButton %}
+{{ govukButton({ text: "Continue" }) }}
+{{ govukButton({ text: "Start now", href: "#", isStartButton: true }) }}
+{{ govukButton({ text: "Cancel", classes: "govuk-button--secondary" }) }}
+{{ govukButton({ text: "Delete", classes: "govuk-button--warning" }) }}</code></pre></div>
+</details>
+
+<p class="govuk-body-s"><a class="govuk-link" href="#top">Back to contents</a></p>
+</div>
+</div>
+
+<div class="govuk-grid-row" id="back-link">
+<div class="govuk-grid-column-two-thirds">
+<h3 class="govuk-heading-m">Back link</h3>
+<p class="govuk-body">Top left of every page except the first. Lets people undo a wrong turn.</p>
+
+<div class="hack-example">
+<a href="#" class="govuk-back-link">Back</a>
+</div>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">HTML &mdash; copy this into a Track A page</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>&lt;a href="#" class="govuk-back-link"&gt;Back&lt;/a&gt;</code></pre></div>
+</details>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">Nunjucks &mdash; copy this into a Track B template</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>{% from "govuk/components/back-link/macro.njk" import govukBackLink %}
+{{ govukBackLink({ text: "Back", href: "#" }) }}</code></pre></div>
+</details>
+
+<p class="govuk-body-s"><a class="govuk-link" href="#top">Back to contents</a></p>
+</div>
+</div>
+
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-full">
+<h2 class="govuk-heading-l hack-section">Errors</h2>
+</div>
+</div>
+
+<div class="govuk-grid-row" id="error-summary">
+<div class="govuk-grid-column-two-thirds">
+<h3 class="govuk-heading-m">Error summary</h3>
+<p class="govuk-body">Goes at the TOP of the page, above the h1, whenever something is wrong. Each item links to the field.</p>
+
+<div class="hack-example">
+<div class="govuk-error-summary" data-module="govuk-error-summary">
+  <div role="alert">
+    <h2 class="govuk-error-summary__title">
+      There is a problem
+    </h2>
+    <div class="govuk-error-summary__body">
+
+        <ul class="govuk-list govuk-error-summary__list">
+
+          <li>
+
+            <a href="#road-name">Enter the name of the road</a>
+
+          </li>
+
+          <li>
+
+            <a href="#size">Select how big the pothole is</a>
+
+          </li>
+
+        </ul>
+
+    </div>
+  </div>
+</div>
+</div>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">HTML &mdash; copy this into a Track A page</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>&lt;div class="govuk-error-summary" data-module="govuk-error-summary"&gt;
+  &lt;div role="alert"&gt;
+    &lt;h2 class="govuk-error-summary__title"&gt;
+      There is a problem
+    &lt;/h2&gt;
+    &lt;div class="govuk-error-summary__body"&gt;
+
+        &lt;ul class="govuk-list govuk-error-summary__list"&gt;
+
+          &lt;li&gt;
+
+            &lt;a href="#road-name"&gt;Enter the name of the road&lt;/a&gt;
+
+          &lt;/li&gt;
+
+          &lt;li&gt;
+
+            &lt;a href="#size"&gt;Select how big the pothole is&lt;/a&gt;
+
+          &lt;/li&gt;
+
+        &lt;/ul&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div>
+</details>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">Nunjucks &mdash; copy this into a Track B template</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>{% from "govuk/components/error-summary/macro.njk" import govukErrorSummary %}
+{{ govukErrorSummary({
+  titleText: "There is a problem",
+  errorList: [
+    { text: "Enter the name of the road", href: "#road-name" },
+    { text: "Select how big the pothole is", href: "#size" }
+  ]
+}) }}</code></pre></div>
+</details>
+
+<p class="govuk-body-s"><a class="govuk-link" href="#top">Back to contents</a></p>
+</div>
+</div>
+
+<div class="govuk-grid-row" id="error-message">
+<div class="govuk-grid-column-two-thirds">
+<h3 class="govuk-heading-m">A field in its error state</h3>
+<p class="govuk-body">The red bar and message on the field itself. Always use it TOGETHER with an error summary, never alone.</p>
+
+<div class="hack-example">
+<div class="govuk-form-group govuk-form-group--error">
+  <h1 class="govuk-label-wrapper">
+    <label class="govuk-label govuk-label--l" for="email">
+      What is your email address?
+    </label>
+  </h1>
+
+  <p id="email-error" class="govuk-error-message">
+
+    <span class="govuk-visually-hidden">Error:</span> Enter an email address in the correct format, like name@example.com
+
+  </p>
+
+  <input class="govuk-input govuk-input--error" id="email" name="email" type="text" aria-describedby="email-error">
+
+</div>
+</div>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">HTML &mdash; copy this into a Track A page</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>&lt;div class="govuk-form-group govuk-form-group--error"&gt;
+  &lt;h1 class="govuk-label-wrapper"&gt;
+    &lt;label class="govuk-label govuk-label--l" for="email"&gt;
+      What is your email address?
+    &lt;/label&gt;
+  &lt;/h1&gt;
+
+  &lt;p id="email-error" class="govuk-error-message"&gt;
+
+    &lt;span class="govuk-visually-hidden"&gt;Error:&lt;/span&gt; Enter an email address in the correct format, like name@example.com
+
+  &lt;/p&gt;
+
+  &lt;input class="govuk-input govuk-input--error" id="email" name="email" type="text" aria-describedby="email-error"&gt;
+
+&lt;/div&gt;</code></pre></div>
+</details>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">Nunjucks &mdash; copy this into a Track B template</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>{% from "govuk/components/input/macro.njk" import govukInput %}
+{{ govukInput({
+  label: { text: "What is your email address?", classes: "govuk-label--l", isPageHeading: true },
+  id: "email",
+  name: "email",
+  errorMessage: { text: "Enter an email address in the correct format, like name@example.com" }
+}) }}</code></pre></div>
+</details>
+
+<p class="govuk-body-s"><a class="govuk-link" href="#top">Back to contents</a></p>
+</div>
+</div>
+
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-full">
+<h2 class="govuk-heading-l hack-section">Confirming</h2>
+</div>
+</div>
+
+<div class="govuk-grid-row" id="summary-list">
+<div class="govuk-grid-column-two-thirds">
+<h3 class="govuk-heading-m">Summary list</h3>
+<p class="govuk-body">The "Check your answers" page. Every row needs a Change link.</p>
+
+<div class="hack-example">
+<dl class="govuk-summary-list">
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Road name
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Acacia Avenue
+    </dd>
+
+    <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">Change<span class="govuk-visually-hidden"> road name</span></a>
+
+    </dd>
+
+  </div>
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Size
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Bigger than a dinner plate
+    </dd>
+
+    <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">Change<span class="govuk-visually-hidden"> size</span></a>
+
+    </dd>
+
+  </div>
+
+</dl>
+</div>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">HTML &mdash; copy this into a Track A page</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>&lt;dl class="govuk-summary-list"&gt;
+
+  &lt;div class="govuk-summary-list__row"&gt;
+    &lt;dt class="govuk-summary-list__key"&gt;
+      Road name
+    &lt;/dt&gt;
+    &lt;dd class="govuk-summary-list__value"&gt;
+      Acacia Avenue
+    &lt;/dd&gt;
+
+    &lt;dd class="govuk-summary-list__actions"&gt;
+            &lt;a class="govuk-link" href="#"&gt;Change&lt;span class="govuk-visually-hidden"&gt; road name&lt;/span&gt;&lt;/a&gt;
+
+    &lt;/dd&gt;
+
+  &lt;/div&gt;
+
+  &lt;div class="govuk-summary-list__row"&gt;
+    &lt;dt class="govuk-summary-list__key"&gt;
+      Size
+    &lt;/dt&gt;
+    &lt;dd class="govuk-summary-list__value"&gt;
+      Bigger than a dinner plate
+    &lt;/dd&gt;
+
+    &lt;dd class="govuk-summary-list__actions"&gt;
+            &lt;a class="govuk-link" href="#"&gt;Change&lt;span class="govuk-visually-hidden"&gt; size&lt;/span&gt;&lt;/a&gt;
+
+    &lt;/dd&gt;
+
+  &lt;/div&gt;
+
+&lt;/dl&gt;</code></pre></div>
+</details>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">Nunjucks &mdash; copy this into a Track B template</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>{% from "govuk/components/summary-list/macro.njk" import govukSummaryList %}
+{{ govukSummaryList({
+  rows: [
+    {
+      key: { text: "Road name" },
+      value: { text: "Acacia Avenue" },
+      actions: { items: [ { href: "#", text: "Change", visuallyHiddenText: "road name" } ] }
+    },
+    {
+      key: { text: "Size" },
+      value: { text: "Bigger than a dinner plate" },
+      actions: { items: [ { href: "#", text: "Change", visuallyHiddenText: "size" } ] }
+    }
+  ]
+}) }}</code></pre></div>
+</details>
+
+<p class="govuk-body-s"><a class="govuk-link" href="#top">Back to contents</a></p>
+</div>
+</div>
+
+<div class="govuk-grid-row" id="panel">
+<div class="govuk-grid-column-two-thirds">
+<h3 class="govuk-heading-m">Confirmation panel</h3>
+<p class="govuk-body">The big green box on the last page. Give them a reference number they can quote.</p>
+
+<div class="hack-example">
+<div class="govuk-panel govuk-panel--confirmation">
+  <h1 class="govuk-panel__title">
+    Report submitted
+  </h1>
+
+  <div class="govuk-panel__body">
+    Your reference number<br><strong>HOLE-482913</strong>
+  </div>
+
+</div>
+</div>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">HTML &mdash; copy this into a Track A page</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>&lt;div class="govuk-panel govuk-panel--confirmation"&gt;
+  &lt;h1 class="govuk-panel__title"&gt;
+    Report submitted
+  &lt;/h1&gt;
+
+  &lt;div class="govuk-panel__body"&gt;
+    Your reference number&lt;br&gt;&lt;strong&gt;HOLE-482913&lt;/strong&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;</code></pre></div>
+</details>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">Nunjucks &mdash; copy this into a Track B template</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>{% from "govuk/components/panel/macro.njk" import govukPanel %}
+{{ govukPanel({
+  titleText: "Report submitted",
+  html: "Your reference number&lt;br&gt;&lt;strong&gt;HOLE-482913&lt;/strong&gt;"
+}) }}</code></pre></div>
+</details>
+
+<p class="govuk-body-s"><a class="govuk-link" href="#top">Back to contents</a></p>
+</div>
+</div>
+
+<div class="govuk-grid-row" id="task-list">
+<div class="govuk-grid-column-two-thirds">
+<h3 class="govuk-heading-m">Task list</h3>
+<p class="govuk-body">A longer service split into chunks that can be done in any order. A great stretch goal.</p>
+
+<div class="hack-example">
+<ul class="govuk-task-list">
+
+  <li class="govuk-task-list__item govuk-task-list__item--with-link">
+    <div class="govuk-task-list__name-and-hint">
+
+      <a class="govuk-link govuk-task-list__link" href="#" aria-describedby="report-1-status">
+        Where is the pothole?
+      </a>
+
+    </div>
+    <div class="govuk-task-list__status" id="report-1-status">
+
+      Completed
+
+    </div>
+  </li>
+
+  <li class="govuk-task-list__item govuk-task-list__item--with-link">
+    <div class="govuk-task-list__name-and-hint">
+
+      <a class="govuk-link govuk-task-list__link" href="#" aria-describedby="report-2-status">
+        How big is it?
+      </a>
+
+    </div>
+    <div class="govuk-task-list__status" id="report-2-status">
+
+      <strong class="govuk-tag govuk-tag--blue">
+        Incomplete
+      </strong>
+
+    </div>
+  </li>
+
+  <li class="govuk-task-list__item">
+    <div class="govuk-task-list__name-and-hint">
+
+      <div>
+        Your contact details
+      </div>
+
+      <div id="report-3-hint" class="govuk-task-list__hint">
+        Finish the earlier sections first
+      </div>
+
+    </div>
+    <div class="govuk-task-list__status govuk-task-list__status--cannot-start-yet" id="report-3-status">
+
+      Cannot start yet
+
+    </div>
+  </li>
+
+</ul>
+</div>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">HTML &mdash; copy this into a Track A page</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>&lt;ul class="govuk-task-list"&gt;
+
+  &lt;li class="govuk-task-list__item govuk-task-list__item--with-link"&gt;
+    &lt;div class="govuk-task-list__name-and-hint"&gt;
+
+      &lt;a class="govuk-link govuk-task-list__link" href="#" aria-describedby="report-1-status"&gt;
+        Where is the pothole?
+      &lt;/a&gt;
+
+    &lt;/div&gt;
+    &lt;div class="govuk-task-list__status" id="report-1-status"&gt;
+
+      Completed
+
+    &lt;/div&gt;
+  &lt;/li&gt;
+
+  &lt;li class="govuk-task-list__item govuk-task-list__item--with-link"&gt;
+    &lt;div class="govuk-task-list__name-and-hint"&gt;
+
+      &lt;a class="govuk-link govuk-task-list__link" href="#" aria-describedby="report-2-status"&gt;
+        How big is it?
+      &lt;/a&gt;
+
+    &lt;/div&gt;
+    &lt;div class="govuk-task-list__status" id="report-2-status"&gt;
+
+      &lt;strong class="govuk-tag govuk-tag--blue"&gt;
+        Incomplete
+      &lt;/strong&gt;
+
+    &lt;/div&gt;
+  &lt;/li&gt;
+
+  &lt;li class="govuk-task-list__item"&gt;
+    &lt;div class="govuk-task-list__name-and-hint"&gt;
+
+      &lt;div&gt;
+        Your contact details
+      &lt;/div&gt;
+
+      &lt;div id="report-3-hint" class="govuk-task-list__hint"&gt;
+        Finish the earlier sections first
+      &lt;/div&gt;
+
+    &lt;/div&gt;
+    &lt;div class="govuk-task-list__status govuk-task-list__status--cannot-start-yet" id="report-3-status"&gt;
+
+      Cannot start yet
+
+    &lt;/div&gt;
+  &lt;/li&gt;
+
+&lt;/ul&gt;</code></pre></div>
+</details>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">Nunjucks &mdash; copy this into a Track B template</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>{% from "govuk/components/task-list/macro.njk" import govukTaskList %}
+{{ govukTaskList({
+  idPrefix: "report",
+  items: [
+    {
+      title: { text: "Where is the pothole?" },
+      href: "#",
+      status: { text: "Completed" }
+    },
+    {
+      title: { text: "How big is it?" },
+      href: "#",
+      status: { tag: { text: "Incomplete", classes: "govuk-tag--blue" } }
+    },
+    {
+      title: { text: "Your contact details" },
+      hint: { text: "Finish the earlier sections first" },
+      status: { text: "Cannot start yet", classes: "govuk-task-list__status--cannot-start-yet" }
+    }
+  ]
+}) }}</code></pre></div>
+</details>
+
+<p class="govuk-body-s"><a class="govuk-link" href="#top">Back to contents</a></p>
+</div>
+</div>
+
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-full">
+<h2 class="govuk-heading-l hack-section">Telling people things</h2>
+</div>
+</div>
+
+<div class="govuk-grid-row" id="inset-text">
+<div class="govuk-grid-column-two-thirds">
+<h3 class="govuk-heading-m">Inset text</h3>
+<p class="govuk-body">Draw the eye to something related to the page content, like a quote or a note.</p>
+
+<div class="hack-example">
+<div class="govuk-inset-text">
+  Potholes on motorways are handled by National Highways, not your council.
+</div>
+</div>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">HTML &mdash; copy this into a Track A page</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>&lt;div class="govuk-inset-text"&gt;
+  Potholes on motorways are handled by National Highways, not your council.
+&lt;/div&gt;</code></pre></div>
+</details>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">Nunjucks &mdash; copy this into a Track B template</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>{% from "govuk/components/inset-text/macro.njk" import govukInsetText %}
+{{ govukInsetText({ text: "Potholes on motorways are handled by National Highways, not your council." }) }}</code></pre></div>
+</details>
+
+<p class="govuk-body-s"><a class="govuk-link" href="#top">Back to contents</a></p>
+</div>
+</div>
+
+<div class="govuk-grid-row" id="warning-text">
+<div class="govuk-grid-column-two-thirds">
+<h3 class="govuk-heading-m">Warning text</h3>
+<p class="govuk-body">Consequences. Use it sparingly or people stop noticing it.</p>
+
+<div class="hack-example">
+<div class="govuk-warning-text">
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <strong class="govuk-warning-text__text">
+    <span class="govuk-visually-hidden">Warning</span>
+    Reporting a pothole that does not exist is an offence.
+  </strong>
+</div>
+</div>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">HTML &mdash; copy this into a Track A page</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>&lt;div class="govuk-warning-text"&gt;
+  &lt;span class="govuk-warning-text__icon" aria-hidden="true"&gt;!&lt;/span&gt;
+  &lt;strong class="govuk-warning-text__text"&gt;
+    &lt;span class="govuk-visually-hidden"&gt;Warning&lt;/span&gt;
+    Reporting a pothole that does not exist is an offence.
+  &lt;/strong&gt;
+&lt;/div&gt;</code></pre></div>
+</details>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">Nunjucks &mdash; copy this into a Track B template</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>{% from "govuk/components/warning-text/macro.njk" import govukWarningText %}
+{{ govukWarningText({ text: "Reporting a pothole that does not exist is an offence.", iconFallbackText: "Warning" }) }}</code></pre></div>
+</details>
+
+<p class="govuk-body-s"><a class="govuk-link" href="#top">Back to contents</a></p>
+</div>
+</div>
+
+<div class="govuk-grid-row" id="notification-banner">
+<div class="govuk-grid-column-two-thirds">
+<h3 class="govuk-heading-m">Notification banner</h3>
+<p class="govuk-body">Tell someone something succeeded, or that they need to act. Not for errors on a form.</p>
+
+<div class="hack-example">
+<div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+  <div class="govuk-notification-banner__header">
+    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+      Success
+    </h2>
+  </div>
+  <div class="govuk-notification-banner__content">
+
+    <p class="govuk-notification-banner__heading">
+      Your report has been sent to the council.
+    </p>
+
+  </div>
+</div>
+</div>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">HTML &mdash; copy this into a Track A page</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>&lt;div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner"&gt;
+  &lt;div class="govuk-notification-banner__header"&gt;
+    &lt;h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title"&gt;
+      Success
+    &lt;/h2&gt;
+  &lt;/div&gt;
+  &lt;div class="govuk-notification-banner__content"&gt;
+
+    &lt;p class="govuk-notification-banner__heading"&gt;
+      Your report has been sent to the council.
+    &lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div>
+</details>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">Nunjucks &mdash; copy this into a Track B template</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>{% from "govuk/components/notification-banner/macro.njk" import govukNotificationBanner %}
+{{ govukNotificationBanner({
+  type: "success",
+  text: "Your report has been sent to the council."
+}) }}</code></pre></div>
+</details>
+
+<p class="govuk-body-s"><a class="govuk-link" href="#top">Back to contents</a></p>
+</div>
+</div>
+
+<div class="govuk-grid-row" id="details">
+<div class="govuk-grid-column-two-thirds">
+<h3 class="govuk-heading-m">Details</h3>
+<p class="govuk-body">Hide an explanation that only some people need, so the page stays short.</p>
+
+<div class="hack-example">
+<details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      What counts as a pothole?
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    A hole in the road surface deeper than 40mm. Anything shallower is a defect.
+  </div>
+</details>
+</div>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">HTML &mdash; copy this into a Track A page</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>&lt;details class="govuk-details"&gt;
+  &lt;summary class="govuk-details__summary"&gt;
+    &lt;span class="govuk-details__summary-text"&gt;
+      What counts as a pothole?
+    &lt;/span&gt;
+  &lt;/summary&gt;
+  &lt;div class="govuk-details__text"&gt;
+    A hole in the road surface deeper than 40mm. Anything shallower is a defect.
+  &lt;/div&gt;
+&lt;/details&gt;</code></pre></div>
+</details>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">Nunjucks &mdash; copy this into a Track B template</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>{% from "govuk/components/details/macro.njk" import govukDetails %}
+{{ govukDetails({
+  summaryText: "What counts as a pothole?",
+  text: "A hole in the road surface deeper than 40mm. Anything shallower is a defect."
+}) }}</code></pre></div>
+</details>
+
+<p class="govuk-body-s"><a class="govuk-link" href="#top">Back to contents</a></p>
+</div>
+</div>
+
+<div class="govuk-grid-row" id="tag">
+<div class="govuk-grid-column-two-thirds">
+<h3 class="govuk-heading-m">Tag</h3>
+<p class="govuk-body">Show the status of something in a list: Completed, Pending, Urgent.</p>
+
+<div class="hack-example">
+<strong class="govuk-tag">
+  Completed
+</strong>
+
+<strong class="govuk-tag govuk-tag--yellow">
+  Pending
+</strong>
+
+<strong class="govuk-tag govuk-tag--red">
+  Urgent
+</strong>
+</div>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">HTML &mdash; copy this into a Track A page</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>&lt;strong class="govuk-tag"&gt;
+  Completed
+&lt;/strong&gt;
+
+&lt;strong class="govuk-tag govuk-tag--yellow"&gt;
+  Pending
+&lt;/strong&gt;
+
+&lt;strong class="govuk-tag govuk-tag--red"&gt;
+  Urgent
+&lt;/strong&gt;</code></pre></div>
+</details>
+
+<details class="govuk-details">
+<summary class="govuk-details__summary"><span class="govuk-details__summary-text">Nunjucks &mdash; copy this into a Track B template</span></summary>
+<div class="govuk-details__text"><pre class="hack-code"><code>{% from "govuk/components/tag/macro.njk" import govukTag %}
+{{ govukTag({ text: "Completed" }) }}
+{{ govukTag({ text: "Pending", classes: "govuk-tag--yellow" }) }}
+{{ govukTag({ text: "Urgent", classes: "govuk-tag--red" }) }}</code></pre></div>
+</details>
+
+<p class="govuk-body-s"><a class="govuk-link" href="#top">Back to contents</a></p>
+</div>
+</div>
+
+        </main>
+
+      </div>
+
+        <footer class="govuk-template__footer">
+
+          <div class="govuk-footer">
+  <div class="govuk-width-container">
+  <svg focusable="false" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 60" height="30" width="32" fill="currentcolor" class="govuk-footer__crown">
+    <g>
+        <circle cx="20" cy="17.6" r="3.7"/>
+        <circle cx="10.2" cy="23.5" r="3.7"/>
+        <circle cx="3.7" cy="33.2" r="3.7"/>
+        <circle cx="31.7" cy="30.6" r="3.7"/>
+        <circle cx="43.3" cy="17.6" r="3.7"/>
+        <circle cx="53.2" cy="23.5" r="3.7"/>
+        <circle cx="59.7" cy="33.2" r="3.7"/>
+        <circle cx="31.7" cy="30.6" r="3.7"/>
+        <path d="M33.1,9.8c.2-.1.3-.3.5-.5l4.6,2.4v-6.8l-4.6,1.5c-.1-.2-.3-.3-.5-.5l1.9-5.9h-6.7l1.9,5.9c-.2.1-.3.3-.5.5l-4.6-1.5v6.8l4.6-2.4c.1.2.3.3.5.5l-2.6,8c-.9,2.8,1.2,5.7,4.1,5.7h0c3,0,5.1-2.9,4.1-5.7l-2.6-8ZM37,37.9s-3.4,3.8-4.1,6.1c2.2,0,4.2-.5,6.4-2.8l-.7,8.5c-2-2.8-4.4-4.1-5.7-3.8.1,3.1.5,6.7,5.8,7.2,3.7.3,6.7-1.5,7-3.8.4-2.6-2-4.3-3.7-1.6-1.4-4.5,2.4-6.1,4.9-3.2-1.9-4.5-1.8-7.7,2.4-10.9,3,4,2.6,7.3-1.2,11.1,2.4-1.3,6.2,0,4,4.6-1.2-2.8-3.7-2.2-4.2.2-.3,1.7.7,3.7,3,4.2,1.9.3,4.7-.9,7-5.9-1.3,0-2.4.7-3.9,1.7l2.4-8c.6,2.3,1.4,3.7,2.2,4.5.6-1.6.5-2.8,0-5.3l5,1.8c-2.6,3.6-5.2,8.7-7.3,17.5-7.4-1.1-15.7-1.7-24.5-1.7h0c-8.8,0-17.1.6-24.5,1.7-2.1-8.9-4.7-13.9-7.3-17.5l5-1.8c-.5,2.5-.6,3.7,0,5.3.8-.8,1.6-2.3,2.2-4.5l2.4,8c-1.5-1-2.6-1.7-3.9-1.7,2.3,5,5.2,6.2,7,5.9,2.3-.4,3.3-2.4,3-4.2-.5-2.4-3-3.1-4.2-.2-2.2-4.6,1.6-6,4-4.6-3.7-3.7-4.2-7.1-1.2-11.1,4.2,3.2,4.3,6.4,2.4,10.9,2.5-2.8,6.3-1.3,4.9,3.2-1.8-2.7-4.1-1-3.7,1.6.3,2.3,3.3,4.1,7,3.8,5.4-.5,5.7-4.2,5.8-7.2-1.3-.2-3.7,1-5.7,3.8l-.7-8.5c2.2,2.3,4.2,2.7,6.4,2.8-.7-2.3-4.1-6.1-4.1-6.1h10.6,0Z"/>
+      </g>
+
+  </svg>
+
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+
+          <svg aria-hidden="true" focusable="false" class="govuk-footer__licence-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 483.2 195.7" height="17" width="41">
+            <path fill="currentColor" d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145" />
+          </svg>
+          <span class="govuk-footer__licence-description">
+
+            All content is available under the
+            <a class="govuk-footer__link" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated
+
+          </span>
+
+      </div>
+      <div class="govuk-footer__meta-item">
+        <a class="govuk-footer__link govuk-footer__copyright-logo" href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">
+
+          © Crown copyright
+
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </footer>
+
+<script src="../vendor/govuk/all.bundle.js"></script>
+<script>window.GOVUKFrontend.initAll()</script>
+
+  </body>
+</html>

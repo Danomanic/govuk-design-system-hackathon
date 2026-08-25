@@ -1,0 +1,63 @@
+{# A question page. ONE question per page - that's the GOV.UK house style.
+
+   This page does two jobs:
+     - normally, it shows an empty (or pre-filled) text box
+     - if `errors` was passed in by routes.js, it shows the error state too
+
+   Look at how `errors` is used in three separate places below. That's the
+   whole validation pattern, and it's the same for every component. #}
+
+{% extends "layout.njk" %}
+
+{% from "govuk/components/input/macro.njk" import govukInput %}
+{% from "govuk/components/button/macro.njk" import govukButton %}
+{% from "govuk/components/error-summary/macro.njk" import govukErrorSummary %}
+{% from "govuk/components/back-link/macro.njk" import govukBackLink %}
+
+{# 1. The <title> must start with "Error:" when something's wrong.
+      Screen reader users hear the title first, so this is how they find out. #}
+{% block pageTitle %}{% if errors %}Error: {% endif %}What is your duck called? - Register a rubber duck - GOV.UK{% endblock %}
+
+{% block backLink %}
+  {{ govukBackLink({ text: "Back", href: "/" }) }}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    {# 2. The error summary goes at the TOP of the page, before the <h1>.
+          Each item links down to the field that's wrong. #}
+    {% if errors %}
+      {{ govukErrorSummary({
+        titleText: "There is a problem",
+        errorList: errors
+      }) }}
+    {% endif %}
+
+    <form method="post" action="/name" novalidate>
+
+      {# 3. The field itself shows a red bar and a message.
+            `value` puts back what they typed so they don't lose it. #}
+      {{ govukInput({
+        label: {
+          text: "What is your duck called?",
+          classes: "govuk-label--l",
+          isPageHeading: true
+        },
+        hint: {
+          text: "For example, Sir Quacks-a-lot"
+        },
+        id: "duckName",
+        name: "duckName",
+        value: duckName,
+        errorMessage: { text: "Enter your duck’s name" } if errors else undefined
+      }) }}
+
+      {{ govukButton({ text: "Continue" }) }}
+
+    </form>
+
+  </div>
+</div>
+{% endblock %}

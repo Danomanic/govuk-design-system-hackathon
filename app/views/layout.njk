@@ -1,0 +1,42 @@
+{# ==========================================================================
+   layout.njk - the shell that every page in your service sits inside.
+
+   The header, the footer, the phase banner and the <head> all live here, so
+   you only have to get them right once.
+
+   CHANGE serviceName BELOW and your service is renamed in the black bar at
+   the top of every single page. That's Level 1 of the walkthrough, done.
+   ========================================================================== #}
+
+{% extends "govuk/template.njk" %}
+
+{% from "govuk/components/phase-banner/macro.njk" import govukPhaseBanner %}
+
+{% set serviceName = "Register a rubber duck" %}
+{% set serviceUrl = "/" %}
+
+{% block head %}
+  <link rel="stylesheet" href="/govuk/govuk-frontend.min.css">
+{% endblock %}
+
+{# The phase banner sits above the page content and tells users this is a
+   work in progress. Every alpha and beta service on GOV.UK has one. #}
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    tag: { text: "alpha" },
+    html: 'This is a hackathon prototype. It doesn’t really do anything.'
+  }) }}
+
+  {# Individual pages fill this in with a back link if they need one. #}
+  {% block backLink %}{% endblock %}
+{% endblock %}
+
+{% block bodyEnd %}
+  {# This is how a real GOV.UK service loads the JavaScript.
+     (Track A, the static one, uses a slightly older-style script tag because
+     browsers won't load modules from a file:// page.) #}
+  <script type="module">
+    import { initAll } from '/govuk/govuk-frontend.min.js'
+    initAll()
+  </script>
+{% endblock %}

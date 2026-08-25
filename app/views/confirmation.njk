@@ -1,0 +1,33 @@
+{# The confirmation page. Big green panel, a reference number, and - the bit
+   people forget - a clear "What happens next". #}
+
+{% extends "layout.njk" %}
+
+{% from "govuk/components/panel/macro.njk" import govukPanel %}
+
+{% block pageTitle %}Application complete - Register a rubber duck - GOV.UK{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    {{ govukPanel({
+      titleText: "Application complete",
+      html: "Your reference number<br><strong>" + answers.reference + "</strong>"
+    }) }}
+
+    <p class="govuk-body">We have sent you a confirmation email.</p>
+
+    <h2 class="govuk-heading-m">What happens next</h2>
+
+    <p class="govuk-body">We’ve sent your duck’s details to the Department for Buoyancy.</p>
+
+    <p class="govuk-body">They will contact you within 5 working days to arrange a flotation test.</p>
+
+    <p class="govuk-body">
+      <a class="govuk-link" href="/">Register another duck</a>
+    </p>
+
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,55 @@
+{# "Check your answers" - a required GOV.UK pattern.
+
+   Show everything the user has told you, with a Change link on every row,
+   before they commit to anything.
+
+   When you add a question, ADD A ROW HERE TOO. It's the step everyone
+   forgets. #}
+
+{% extends "layout.njk" %}
+
+{% from "govuk/components/summary-list/macro.njk" import govukSummaryList %}
+{% from "govuk/components/button/macro.njk" import govukButton %}
+{% from "govuk/components/back-link/macro.njk" import govukBackLink %}
+
+{% block pageTitle %}Check your answers - Register a rubber duck - GOV.UK{% endblock %}
+
+{% block backLink %}
+  {{ govukBackLink({ text: "Back", href: "/name" }) }}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">Check your answers before submitting</h1>
+
+    {{ govukSummaryList({
+      rows: [
+        {
+          key: { text: "Duck’s name" },
+          value: { text: answers.duckName },
+          actions: {
+            items: [
+              {
+                href: "/name",
+                text: "Change",
+                visuallyHiddenText: "duck’s name"
+              }
+            ]
+          }
+        }
+      ]
+    }) }}
+
+    <h2 class="govuk-heading-m">Now send your application</h2>
+
+    <p class="govuk-body">By submitting this application you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
+
+    <form method="post" action="/check-answers" novalidate>
+      {{ govukButton({ text: "Accept and send" }) }}
+    </form>
+
+  </div>
+</div>
+{% endblock %}

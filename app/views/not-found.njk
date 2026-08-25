@@ -1,0 +1,26 @@
+{# Shown when someone visits a URL that doesn't exist.
+
+   If you're seeing this by accident, it usually means routes.js doesn't have
+   a route for the page you asked for yet. #}
+
+{% extends "layout.njk" %}
+
+{% block pageTitle %}Page not found - Register a rubber duck - GOV.UK{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">Page not found</h1>
+
+    <p class="govuk-body">If you typed the web address, check it is correct.</p>
+
+    <p class="govuk-body">There’s probably no route for this page in <code class="govuk-body">routes.js</code> yet.</p>
+
+    <p class="govuk-body">
+      <a class="govuk-link" href="/">Go back to the start page</a>
+    </p>
+
+  </div>
+</div>
+{% endblock %}

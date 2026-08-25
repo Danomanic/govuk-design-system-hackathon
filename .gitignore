@@ -1,0 +1,18 @@
+# ---------------------------------------------------------------------------
+# NOTE: node_modules/ and vendor/ are deliberately NOT ignored.
+#
+# This hackathon has to run with no internet, so the dependencies and the
+# GOV.UK Design System are committed to the repo on purpose. Students clone it
+# and it just works - no npm install, no downloads.
+#
+# Don't "tidy this up" by ignoring them, or the whole thing stops working on
+# the day.
+# ---------------------------------------------------------------------------
+
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+.env
+.vscode/
+.idea/
