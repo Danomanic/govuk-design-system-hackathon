@@ -74,6 +74,7 @@ open in a second tab.
 | `app/` | Track B — the Express version |
 | `app/routes.js` | Track B: the file you actually change |
 | `vendor/govuk/` | The GOV.UK Design System itself. Don't edit this. |
+| `tools/` | How the `static/` pages were generated. Ignore it. |
 
 Both tracks start life as the same throwaway example service, **Register a rubber duck**.
 Your first job is to gut it and make it yours.

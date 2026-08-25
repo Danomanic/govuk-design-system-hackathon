@@ -12,8 +12,7 @@
   .hack-code { background: #f3f2f1; border: 1px solid #b1b4b6; padding: 12px; overflow-x: auto; font-size: 15px; line-height: 1.4; white-space: pre; }
   .hack-code code { font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; }
   .hack-js { display: inline-block; margin-bottom: 10px; }
-  .hack-contents { column-count: 2; column-gap: 30px; }
-  @media (max-width: 40.0625em) { .hack-contents { column-count: 1; } }
+  .hack-contents { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0 30px; }
   .hack-section { border-top: 2px solid #1d70b8; padding-top: 15px; margin-top: 50px; }
 </style>
 
@@ -108,6 +107,7 @@
 <div class="govuk-grid-column-full">
 <h2 class="govuk-heading-m">Contents</h2>
 <div class="hack-contents">
+<div>
 <h3 class="govuk-heading-s govuk-!-margin-bottom-1">Asking questions</h3>
 <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-4">
 <li><a class="govuk-link" href="#text-input">Text input</a></li>
@@ -119,22 +119,30 @@
 <li><a class="govuk-link" href="#select">Select</a></li>
 <li><a class="govuk-link" href="#date-input">Date input</a></li>
 </ul>
+</div>
+<div>
 <h3 class="govuk-heading-s govuk-!-margin-bottom-1">Moving around</h3>
 <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-4">
 <li><a class="govuk-link" href="#button">Button</a></li>
 <li><a class="govuk-link" href="#back-link">Back link</a></li>
 </ul>
+</div>
+<div>
 <h3 class="govuk-heading-s govuk-!-margin-bottom-1">Errors</h3>
 <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-4">
 <li><a class="govuk-link" href="#error-summary">Error summary</a></li>
 <li><a class="govuk-link" href="#error-message">A field in its error state</a></li>
 </ul>
+</div>
+<div>
 <h3 class="govuk-heading-s govuk-!-margin-bottom-1">Confirming</h3>
 <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-4">
 <li><a class="govuk-link" href="#summary-list">Summary list</a></li>
 <li><a class="govuk-link" href="#panel">Confirmation panel</a></li>
 <li><a class="govuk-link" href="#task-list">Task list</a></li>
 </ul>
+</div>
+<div>
 <h3 class="govuk-heading-s govuk-!-margin-bottom-1">Telling people things</h3>
 <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-4">
 <li><a class="govuk-link" href="#inset-text">Inset text</a></li>
@@ -143,6 +151,7 @@
 <li><a class="govuk-link" href="#details">Details</a></li>
 <li><a class="govuk-link" href="#tag">Tag</a></li>
 </ul>
+</div>
 </div>
 </div>
 </div>

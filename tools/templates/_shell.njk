@@ -1,0 +1,22 @@
+{% extends "govuk/template.njk" %}
+{% from "govuk/components/phase-banner/macro.njk" import govukPhaseBanner %}
+{% set serviceName = "Register a rubber duck" %}
+{% set serviceUrl = "index.html" %}
+{% set assetPath = "../vendor/govuk/assets" %}
+{% block head %}
+<link rel="stylesheet" href="../vendor/govuk/govuk-frontend.min.css">
+{% endblock %}
+{% block headIcons %}
+<link rel="icon" sizes="48x48" href="../vendor/govuk/assets/images/favicon.ico">
+<link rel="icon" sizes="any" href="../vendor/govuk/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="mask-icon" href="../vendor/govuk/assets/images/govuk-icon-mask.svg" color="#1d70b8">
+<link rel="apple-touch-icon" href="../vendor/govuk/assets/images/govuk-icon-180.png">
+{% endblock %}
+{% block beforeContent %}
+{{ govukPhaseBanner({ tag: { text: "alpha" }, html: 'This is a hackathon prototype. It doesn’t really do anything.' }) }}
+{% block backLink %}{% endblock %}
+{% endblock %}
+{% block bodyEnd %}
+<script src="../vendor/govuk/all.bundle.js"></script>
+<script>window.GOVUKFrontend.initAll()</script>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "_shell.njk" %}
+{% block pageTitle %}Component gallery - Register a rubber duck - GOV.UK{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="../vendor/govuk/govuk-frontend.min.css">
+<style>
+  .hack-example { border: 1px solid #b1b4b6; border-left: 5px solid #1d70b8; padding: 20px 20px 5px; margin-bottom: 10px; background: #fff; }
+  .hack-code { background: #f3f2f1; border: 1px solid #b1b4b6; padding: 12px; overflow-x: auto; font-size: 15px; line-height: 1.4; white-space: pre; }
+  .hack-code code { font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; }
+  .hack-js { display: inline-block; margin-bottom: 10px; }
+  .hack-contents { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0 30px; }
+  .hack-section { border-top: 2px solid #1d70b8; padding-top: 15px; margin-top: 50px; }
+</style>
+{% endblock %}
+{% block content %}{{ body | safe }}{% endblock %}
