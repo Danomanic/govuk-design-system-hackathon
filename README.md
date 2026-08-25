@@ -115,8 +115,15 @@ Three minutes each, at the end.
 **This is a prototype, not a real service.** Don't put anything real in it, and don't publish
 it anywhere that could be mistaken for GOV.UK.
 
-**The GDS Transport typeface** included in `vendor/` is licensed for use on GOV.UK services
-and prototypes. That's what this is, but don't lift the fonts out of here for other projects.
+**The GDS Transport typeface** in `vendor/` is licensed for the `gov.uk`, `service.gov.uk` and
+`blog.gov.uk` domains. Using it for local prototypes like these is exactly what the GOV.UK
+Prototype Kit does, so you're on well-trodden ground here.
+
+What you must **not** do is deploy one of these services to a public URL. A GOV.UK-branded
+service on a domain that isn't `service.gov.uk` is passing itself off as government, which is a
+genuine problem regardless of the font. Keep them on `localhost` and `file://`. If you ever do
+want to put one online, swap the typeface first — see
+[Using GOV.UK Frontend without GOV.UK branding](https://frontend.design-system.service.gov.uk/).
 
 **Track B stores answers in a plain object shared by everyone hitting the server.** That is
 deliberately the wrong thing to do, and `app/routes.js` explains why. It keeps the code short
